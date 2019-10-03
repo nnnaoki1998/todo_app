@@ -21,18 +21,18 @@ class GoalsController < ApplicationController
     @goal = current_user.goals.new(goal_params)
 
     if @goal.save
-      @state = true
+      @status = true
     else
-      @state = false
+      @status = false
     end
   end
 
   # PATCH/PUT /goals/1
   def update
     if @goal.update(goal_params)
-      @state = true
+      @status = true
     else
-      @state = false
+      @status = false
     end
   end
 
