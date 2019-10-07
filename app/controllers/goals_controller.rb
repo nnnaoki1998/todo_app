@@ -19,7 +19,6 @@ class GoalsController < ApplicationController
   # POST /goals
   def create
     @goal = current_user.goals.new(goal_params)
-
     if @goal.save
       @status = true
     else
