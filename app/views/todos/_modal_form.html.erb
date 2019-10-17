@@ -25,7 +25,7 @@
                 </div>
                 <div class="field">
                     <%= form.collection_check_boxes :tag_ids, current_user.tags, :id, :name do |b| %>
-                        <%= b.lavel(class: "form-check") do %>
+                        <%= b.label(class: "form-check") do %>
                             <%= b.check_box(class: "form-check-input") %>
                             <div class="btn btn-secondary" >
                                 <%= b.text %>
